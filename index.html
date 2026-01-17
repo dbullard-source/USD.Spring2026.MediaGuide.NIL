@@ -281,7 +281,7 @@
         .top-earner-badge {
             position: absolute;
             top: 18px;
-            right: 18px;
+            left: 18px;
             background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
             color: #000;
             font-size: 0.65rem;
@@ -292,6 +292,7 @@
             box-shadow: 0 4px 12px rgba(255, 215, 0, 0.4);
             letter-spacing: 0.5px;
             animation: pulse 2s ease-in-out infinite;
+            z-index: 10;
         }
 
         @keyframes pulse {
@@ -329,11 +330,26 @@
             color: var(--usd-navy); 
             margin: 0;
             letter-spacing: -0.3px;
+            transition: color 0.3s;
         }
         .athlete-info span { 
             font-size: 0.82rem; 
             color: var(--text-light); 
             font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .athlete-info a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .athlete-info:hover h3 {
+            color: var(--usd-blue);
+        }
+
+        .athlete-info:hover span {
+            color: var(--usd-navy);
         }
 
         .metric-row {
@@ -512,8 +528,10 @@
             <div class="athlete-header">
                 <div class="avatar">RB</div>
                 <div class="athlete-info">
-                    <h3>Reese Bates</h3>
-                    <span>@reesebatesvolleyball</span>
+                    <a href="https://www.instagram.com/reesebatesvolleyball/" target="_blank">
+                        <h3>Reese Bates</h3>
+                        <span>@reesebatesvolleyball</span>
+                    </a>
                 </div>
             </div>
             <div class="metric-row">
@@ -526,8 +544,10 @@
             <div class="athlete-header">
                 <div class="avatar">EJ</div>
                 <div class="athlete-info">
-                    <h3>Elijah Johnson</h3>
-                    <span>@smoothlijah</span>
+                    <a href="https://www.instagram.com/smoothlijah/" target="_blank">
+                        <h3>Elijah Johnson</h3>
+                        <span>@smoothlijah</span>
+                    </a>
                 </div>
             </div>
             <div class="metric-row">
@@ -540,8 +560,10 @@
             <div class="athlete-header">
                 <div class="avatar">GA</div>
                 <div class="athlete-info">
-                    <h3>Godwin Antwi</h3>
-                    <span>@godwin.antwi_</span>
+                    <a href="https://www.instagram.com/godwin.antwi_/" target="_blank">
+                        <h3>Godwin Antwi</h3>
+                        <span>@godwin.antwi_</span>
+                    </a>
                 </div>
             </div>
             <div class="metric-row">
@@ -554,8 +576,10 @@
             <div class="athlete-header">
                 <div class="avatar">HH</div>
                 <div class="athlete-info">
-                    <h3>Helen Holley</h3>
-                    <span>@helenholley_</span>
+                    <a href="https://www.instagram.com/helenholley_/" target="_blank">
+                        <h3>Helen Holley</h3>
+                        <span>@helenholley_</span>
+                    </a>
                 </div>
             </div>
             <div class="metric-row">
@@ -568,8 +592,10 @@
             <div class="athlete-header">
                 <div class="avatar">MC</div>
                 <div class="athlete-info">
-                    <h3>Matt Colombo</h3>
-                    <span>@coti_18</span>
+                    <a href="https://www.instagram.com/mattcolombo_/" target="_blank">
+                        <h3>Matt Colombo</h3>
+                        <span>@coti_18</span>
+                    </a>
                 </div>
             </div>
             <div class="metric-row">
@@ -582,8 +608,10 @@
             <div class="athlete-header">
                 <div class="avatar">TM</div>
                 <div class="athlete-info">
-                    <h3>Tim Moore Jr.</h3>
-                    <span>@teamflightbrothers</span>
+                    <a href="https://www.instagram.com/30bucketsss/" target="_blank">
+                        <h3>Tim Moore Jr.</h3>
+                        <span>@teamflightbrothers</span>
+                    </a>
                 </div>
             </div>
             <div class="metric-row">
@@ -596,8 +624,10 @@
             <div class="athlete-header">
                 <div class="avatar">AB</div>
                 <div class="athlete-info">
-                    <h3>Adrian Beltre</h3>
-                    <span>@ajbeltre_29</span>
+                    <a href="https://www.instagram.com/ajbeltre_29/" target="_blank">
+                        <h3>Adrian Beltre</h3>
+                        <span>@ajbeltre_29</span>
+                    </a>
                 </div>
             </div>
             <div class="metric-row">
@@ -610,8 +640,10 @@
             <div class="athlete-header">
                 <div class="avatar">JG</div>
                 <div class="athlete-info">
-                    <h3>Juanse Gorosito</h3>
-                    <span>@juanseegorosito</span>
+                    <a href="https://www.instagram.com/juanseegorosito/" target="_blank">
+                        <h3>Juanse Gorosito</h3>
+                        <span>@juanseegorosito</span>
+                    </a>
                 </div>
             </div>
             <div class="metric-row">
@@ -624,8 +656,10 @@
             <div class="athlete-header">
                 <div class="avatar">VB</div>
                 <div class="athlete-info">
-                    <h3>Vuk Boskovic</h3>
-                    <span>@boskovic V</span>
+                    <a href="https://www.instagram.com/boskovic__v/" target="_blank">
+                        <h3>Vuk Boskovic</h3>
+                        <span>@boskovic V</span>
+                    </a>
                 </div>
             </div>
             <div class="metric-row">
@@ -638,8 +672,10 @@
             <div class="athlete-header">
                 <div class="avatar">MT</div>
                 <div class="athlete-info">
-                    <h3>Malia Tharpe</h3>
-                    <span>@malia_tharpe</span>
+                    <a href="https://www.instagram.com/malia_tharpe/" target="_blank">
+                        <h3>Malia Tharpe</h3>
+                        <span>@malia_tharpe</span>
+                    </a>
                 </div>
             </div>
             <div class="metric-row">
